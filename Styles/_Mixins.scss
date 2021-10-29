@@ -1,3 +1,25 @@
+@mixin container {
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+@mixin grid {
+    //@include container();
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+}
+
+@mixin heading {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    color: $heading-color;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
 @mixin button {
     &:link,
     &:visited {
