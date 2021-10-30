@@ -5,10 +5,9 @@
 }
 
 @mixin grid {
-    //@include container();
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
 }
 

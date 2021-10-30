@@ -156,13 +156,36 @@ html {
                 }
                 #grid-pattern {
                     @include grid();
-                    background-color: $bg-color;
-                    img {
-                        width: 60%;
-                        
+                    .text-box{
+                        .step{
+                            font-size: 8.6rem;
+                            font-weight: 600;
+                            margin-bottom: 1.2rem;
+                            color: #ddd;
+                        }
+                        h3{
+                            font-size: 3rem;
+                            line-height: 1.2;
+                            margin-bottom: 3.2rem;
+                            color: $heading-color;
+                        }
+                        p{
+                            font-size: 2rem;
+                            line-height: 1.8;
+                        }
+                    }
+                    .img-box{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            width: 70%;
+                        }
                     }
                 }
             }
         }
+
+        // Section B
     }
 }
