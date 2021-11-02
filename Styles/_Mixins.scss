@@ -1,14 +1,32 @@
 @mixin container {
     max-width: 115rem;
     margin: 0 auto;
-    padding: 0 3.2rem;
+    padding: 9.6rem 3.2rem;
 }
 
-@mixin grid {
+@mixin grid($columns) {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat($columns, 1fr);
     grid-gap: 5rem;
+}
+
+@mixin section-headings {
+    p:first-child {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $primary-color;
+        padding-bottom: 1.6rem;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+    }
+    h2 {
+        @include heading();
+        font-size: 4.4rem;
+        line-height: 1.2;
+        padding-bottom: 3.6rem;
+    }
 }
 
 @mixin heading {
