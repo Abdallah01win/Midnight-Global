@@ -416,13 +416,12 @@ html {
                     padding: 0.8rem 8rem;
                     transform: rotate(45deg);
                 }
-                
             }
-            .box-container{
-                .grid-pattern{
+            .box-container {
+                .grid-pattern {
                     @include grid(4);
-                    .grid-element{
-                        .element-icon{
+                    .grid-element {
+                        .element-icon {
                             color: $primary-color;
                             background: $bg-color;
                             height: 3.2rem;
@@ -431,17 +430,128 @@ html {
                             padding: 1.6rem;
                             border-radius: 50%;
                         }
-                        .element-title{
+                        .element-title {
                             font-size: 2.4rem;
                             color: $heading-color;
                             font-weight: 700;
                             margin-bottom: 1.6rem;
                         }
-                        .element-text{
+                        .element-text {
                             font-size: 1.8rem;
                             line-height: 1.8;
                         }
                     }
+                }
+            }
+        }
+
+        #section-f {
+            .container {
+                @include container();
+                padding: 0px;
+
+                @include grid(2);
+                grid-template-columns: 2fr 1fr;
+                align-items: stretch;
+                overflow: hidden;
+                background: $primary-color;
+                box-shadow: 0 2.4rem 4.8rem rgba($color: #000000, $alpha: 0.3);
+                border-radius: 12px;
+                margin-bottom: 4.6rem;
+                background-image: linear-gradient(to right bottom, #f3a057, $primary-color);
+                height: 55rem;
+
+                .content {
+                    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+                    color: #45260a;
+                    h2 {
+                        font-size: 4.4rem;
+                        color: #45260a;
+                        margin-bottom: 3.2rem;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                        line-height: 1.8;
+                    }
+                    .form {
+                        margin: 25px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        width: 75%;
+                        .input-container {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 2rem;
+                            label {
+                                font-size: 1.8rem;
+                                margin-bottom: 1.1rem;
+                                font-weight: 700;
+                            }
+                            .input {
+                                font-family: inherit;
+                                background: $bg-color;
+                                border: none;
+                                border-radius: 10rem;
+                                padding: 1.2rem 2.4rem;
+                                font-size: 1.8rem;
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                            .input::placeholder {
+                                color: #aaa;
+                            }
+                        }
+                        button {
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            color: $bg-color;
+                            background: #45260a;
+                            line-height: 1.8rem;
+                            padding: 1.3rem 2.4rem;
+                            border: none;
+                            border-radius: 10rem;
+                            margin-top: 1.8rem;
+                            cursor: pointer;
+                            transition: all 300ms ease-out;
+
+                            &:hover {
+                                background: $bg-color;
+                                color: #45260a;
+                            }
+                        }
+                        .checkbox__container {
+                            font-size: 1.8rem;
+                            line-height: 1.6rem;
+                            font-weight: 500;
+                            margin: 2.4rem 0rem;
+                            .checkbox {
+                                transform: scale(1.5);
+                                margin: 0rem 1rem;
+                            }
+                            span {
+                                .link {
+                                    transition: all 300ms ease-out;
+                                    &:hover {
+                                        color: $bg-color;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-img {
+                    background-image: linear-gradient(
+                            to right bottom,
+                            rgba(243, 160, 87, 0.35),
+                            rgba(230, 125, 34, 0.4)
+                        ),
+                        url("/Assets/cta-image.jpg");
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
                 }
             }
         }
