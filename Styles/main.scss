@@ -266,20 +266,7 @@ html {
                         margin-bottom: 0px;
                     }
                     .list {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 1.6rem;
-                        .list-item {
-                            font-size: 1.8rem;
-                            display: flex;
-                            align-items: center;
-                            gap: 1.6rem;
-                            .list-icon {
-                                width: 3rem;
-                                height: 3rem;
-                                color: $primary-color;
-                            }
-                        }
+                        @include list();
                     }
                 }
 
@@ -324,7 +311,7 @@ html {
                     }
                     p {
                         font-size: 1.6rem;
-                        color: $darker-text;
+                        color: $lighter-text;
                     }
                 }
             }
@@ -349,9 +336,113 @@ html {
             }
         }
 
-        #section-e{
-            .container {
+        #section-e {
+            @include container();
+            .headings {
                 @include section-headings();
+            }
+            .container {
+                @include grid(2);
+                margin: 9.6rem;
+                .pricing-plan {
+                    background-color: $bg-color;
+                    border-radius: 12px;
+                    padding: 4.8rem;
+                    width: 75%;
+
+                    &:first-of-type {
+                        justify-self: end;
+                        background: none;
+                        border: solid 4px $bg-color;
+                        padding: 4.4rem;
+                    }
+
+                    .plan-header {
+                        text-align: center;
+                        margin-bottom: 4.8rem;
+                        .plan-name {
+                            color: $primary-color;
+                            font-weight: 600;
+                            font-size: 2rem;
+                            text-transform: uppercase;
+                            letter-spacing: 0.75;
+                            margin-bottom: 3.2rem;
+                        }
+                        .plan-price {
+                            font-size: 6.2rem;
+                            font-weight: 600;
+                            color: $text-color;
+                            margin-bottom: 1.6rem;
+                            span {
+                                font-size: 3rem;
+                                font-weight: 500;
+                                margin-right: 0.8rem;
+                            }
+                        }
+                        .plan-text {
+                            font-size: 1.6rem;
+                            line-height: 1.6;
+                            color: $lighter-text;
+                        }
+                    }
+                    .list {
+                        @include list();
+                    }
+                    .plan-cta {
+                        text-align: center;
+                        margin-top: 4.8rem;
+                        a {
+                            @include button();
+                        }
+                    }
+                }
+
+                /* --- Flag --- */
+
+                .pricing-plan-2 {
+                    position: relative;
+                    overflow: hidden;
+                }
+                .pricing-plan-2::after {
+                    content: "Best Value";
+                    position: absolute;
+                    top: 6%;
+                    right: -18%;
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    color: $text-color;
+                    background-color: $gold-yellow;
+                    padding: 0.8rem 8rem;
+                    transform: rotate(45deg);
+                }
+                
+            }
+            .box-container{
+                .grid-pattern{
+                    @include grid(4);
+                    .grid-element{
+                        .element-icon{
+                            color: $primary-color;
+                            background: $bg-color;
+                            height: 3.2rem;
+                            width: 3.2rem;
+                            margin-bottom: 3.2rem;
+                            padding: 1.6rem;
+                            border-radius: 50%;
+                        }
+                        .element-title{
+                            font-size: 2.4rem;
+                            color: $heading-color;
+                            font-weight: 700;
+                            margin-bottom: 1.6rem;
+                        }
+                        .element-text{
+                            font-size: 1.8rem;
+                            line-height: 1.8;
+                        }
+                    }
+                }
             }
         }
     }
