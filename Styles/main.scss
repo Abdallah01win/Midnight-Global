@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     a {
         text-decoration: none;
         cursor: pointer;
@@ -23,7 +24,7 @@ html {
         font-weight: 400;
         line-height: 1;
         color: $text-color;
-
+       
         // Navigation //
 
         header {
@@ -32,8 +33,9 @@ html {
                 a {
                     color: inherit;
                 }
-                height: 8rem;
-                max-width: 108.6rem;
+                height: 6.4rem;
+                max-width: 120rem;
+                padding: 0 3.2rem;
                 display: flex;
                 align-items: center;
                 margin: 0 auto;
@@ -63,6 +65,9 @@ html {
                         }
                     }
                 }
+                #ham{
+                    display: none;
+                }
             }
         }
 
@@ -72,17 +77,19 @@ html {
             background-color: $bg-color;
             .container {
                 @include container();
+                padding: 6.4rem 3.2rem;
+                max-width: 120rem;
                 @include grid(2);
 
                 #hero-text-box {
                     .heading-primary {
                         @include heading();
-                        margin-bottom: 4.8rem;
+                        margin-bottom: 6.4rem;
                     }
                     .hero-discription {
                         font-size: 2rem;
                         line-height: 1.6;
-                        margin-bottom: 4.2rem;
+                        margin-bottom: 4.8rem;
                     }
                     a {
                         @include button();
@@ -95,7 +102,7 @@ html {
                         display: flex;
                         align-items: center;
                         gap: 1.6rem;
-                        margin-top: 4.8rem;
+                        margin-top: 6.4rem;
                         #customer-images {
                             display: flex;
                             img {
@@ -320,7 +327,6 @@ html {
                 padding: 0px;
                 grid-gap: 1.6rem;
                 align-items: stretch;
-                //padding-top: 9.6rem;
                 figure {
                     overflow: hidden;
                     img {
@@ -348,7 +354,7 @@ html {
                     background-color: $bg-color;
                     border-radius: 12px;
                     padding: 4.8rem;
-                    width: 75%;
+                    width: 90%;
 
                     &:first-of-type {
                         justify-self: end;
@@ -446,10 +452,10 @@ html {
         }
 
         #section-f {
+            margin: 9.6rem 0rem 15rem 0rem;
             .container {
                 @include container();
                 padding: 0px;
-
                 @include grid(2);
                 grid-template-columns: 2fr 1fr;
                 align-items: stretch;
@@ -459,7 +465,6 @@ html {
                 border-radius: 12px;
                 margin-bottom: 4.6rem;
                 background-image: linear-gradient(to right bottom, #f3a057, $primary-color);
-                height: 55rem;
 
                 .content {
                     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
@@ -522,9 +527,9 @@ html {
                         }
                         .checkbox__container {
                             font-size: 1.8rem;
-                            line-height: 1.6rem;
+                            line-height: 1.6;
                             font-weight: 500;
-                            margin: 2.4rem 0rem;
+                            margin: 3.8rem 0rem;
                             .checkbox {
                                 transform: scale(1.5);
                                 margin: 0rem 1rem;
@@ -555,5 +560,56 @@ html {
                 }
             }
         }
+
+        footer {
+            border-top: solid 2px #eee;
+            .container {
+                @include container();
+                @include grid(5);
+                align-items: stretch;
+                .footer-heading {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    margin-bottom: 3.2rem;
+                }
+                .logo {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 2.4rem;
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        .social-link {
+                            height: 2.4rem;
+                            width: 2.4rem;
+                            color: #767676;
+                        }
+                    }
+                    .copyright {
+                        font-size: 1.4rem;
+                        line-height: 1.6;
+                        color: #767676;
+                        margin-top: auto;
+                    }
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.4rem;
+
+                    li {
+                        a {
+                            font-size: 1.6rem;
+                            color: $heading-color;
+                            &:hover,
+                            &:active {
+                                color: $lighter-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+@import "Media-queries";

@@ -1,0 +1,254 @@
+@media (max-width: 87.5em) {
+    html {
+        body {
+            #section-d {
+                #gallery {
+                    @include grid(2);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+        body {
+            #section-c {
+                .container {
+                    .grid-pattern {
+                        .card {
+                            .card-content {
+                                .card-title {
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                    }
+                    .check-list {
+                        .list-heading {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+            #section-d {
+                @include grid(1);
+                .container {
+                    padding: 8rem 6.4rem;
+                }
+                #gallery {
+                    @include grid(6);
+                    grid-gap: 1.6rem !important;
+                }
+            }
+            #section-f {
+                .container {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 68.75em) {
+    html {
+        body {
+            header {
+                #nav {
+                    padding: 0px 3.2rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+        body {
+            #section-e {
+                .container {
+                    .pricing-plan {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 49.6em) {
+    // 793px
+    html {
+        body {
+            header {
+                #nav {
+                    padding: 0px 6.4rem;
+                    position: relative;
+                    #nav-links {
+                        background-color: white;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100vh;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 4.8rem;
+                        font-size: 3rem;
+                    }
+                    .hidden-nav {
+                        opacity: 0;
+                        pointer-events: none;
+                        visibility: hidden;
+                    }
+                    #ham {
+                        display: inline-block;
+                        .menue-icon {
+                            height: 4.8rem;
+                            width: 4.8rem;
+                            color: $text-color;
+                            &[name="close-outline"] {
+                                display: none;
+                            }
+                        }
+                    }
+                    /*#ham, .close-icon {
+                        .menue-icon{
+                            &[name="close-outline"] {
+                                display: inline-block;
+                            }
+                        }
+                        .menue-icon{
+                            &[name="menue-outline"] {
+                                display: none;
+                            }
+                        }
+                    } */
+                }
+            }
+
+            // classes to be added with JS
+
+            #section-hero {
+                padding: 0 8rem;
+                .container {
+                    @include grid(1);
+                    grid-gap: 6.4rem;
+                    #hero-text-box {
+                        text-align: center;
+                        #customers {
+                            justify-content: center;
+                            margin-bottom: 3.2rem;
+                        }
+                    }
+                    .hero-img-box {
+                        text-align: center;
+                        img {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+            #section-b {
+                .container {
+                    padding-bottom: 3.2rem;
+                    .grid-pattern {
+                        grid-gap: 3.2rem;
+                        .text-box {
+                            .step {
+                                font-size: 6.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #section-c {
+                .container {
+                    padding-bottom: 0px;
+                }
+            }
+            #section-e {
+                .container {
+                    .pricing-plan {
+                        width: 100%;
+                    }
+                }
+            }
+            #section-f {
+                .container {
+                    margin: 9.6rem 7% 15rem 7%;
+                    grid-template-columns: 1.8fr 1.2fr;
+                    .content {
+                        padding-bottom: 0;
+                        h2 {
+                            font-size: 3.6rem;
+                        }
+                        .form {
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 44em) { // 700px 
+    html {
+        body {
+            #section-c {
+                .container {
+                    p, h2{
+                        text-align: center;
+                    }
+                    .grid-pattern {
+                        @include grid(2);
+                        .check-list {
+                            grid-column: 1 / 3;
+                            justify-self: center;
+                            .list {
+                                .list-item {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #section-e {
+                .container {
+                    @include grid(1);
+                    margin: 6.2rem;
+                    
+                    .pricing-plan {
+                        &:first-of-type{
+                            width: 85%;
+                            justify-self: center;
+                        }
+                    }
+                    .pricing-plan-2::after{
+                        right: -10%;
+                        top: 9%
+                    }
+
+                }
+
+                .box-container {
+                    .grid-pattern {
+                        @include grid(2);
+                    }
+                }
+            }
+            // fix the footer
+        }
+    }
+}
+
+@media(max-width:34.4em){ // 550px
+    //fix gallery images too small
+    // section headings too big and breaking line
+    // partners list is too cramped
+    // hero image too small
+    //contact form image too small
+
+} 
