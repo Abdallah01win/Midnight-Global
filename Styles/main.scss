@@ -19,6 +19,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
     body {
         font-family: "Rubik", "sans-serif";
         font-weight: 400;
@@ -101,6 +102,7 @@ html {
                     #customers {
                         display: flex;
                         align-items: center;
+                        flex-wrap: wrap;
                         gap: 1.6rem;
                         margin-top: 6.4rem;
                         #customer-images {
@@ -147,7 +149,7 @@ html {
                     font-size: 1.8rem;
                     letter-spacing: 0.75px;
                     text-transform: uppercase;
-                    margin-bottom: 3.2rem;
+                    margin-bottom: 8.2rem;
                     font-weight: 500;
                 }
 
@@ -167,7 +169,7 @@ html {
             }
         }
 
-        // Section A
+        // Section a
 
         #section-b {
             // Grid Pattern //
@@ -199,7 +201,9 @@ html {
                         justify-content: center;
                         align-items: center;
                         img {
-                            width: 70%;
+                            width: 400px;
+                            height: 335px;
+                            border-radius: 18px 0px 18px 0px;
                         }
                     }
                 }
@@ -579,10 +583,12 @@ html {
                     ul {
                         display: flex;
                         flex-direction: row;
-                        .social-link {
-                            height: 2.4rem;
-                            width: 2.4rem;
-                            color: #767676;
+                        li{
+                            img {
+                                height: 2.4rem;
+                                width: 2.4rem;
+                                margin-bottom: 1.2rem;
+                            }
                         }
                     }
                     .copyright {
