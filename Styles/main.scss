@@ -36,7 +36,7 @@ html {
                 }
                 height: 6.4rem;
                 max-width: 120rem;
-                padding: 0 3.2rem;
+                padding: 2rem 3.2rem 0rem 3.2rem;
                 display: flex;
                 align-items: center;
                 margin: 0 auto;
@@ -44,6 +44,11 @@ html {
                 font-weight: 500;
                 #logo {
                     margin-right: auto;
+                    img{
+
+                        width: 21rem;
+                        height: 8.5rem;
+                    }
                 }
                 #nav-links {
                     display: flex;
@@ -588,6 +593,12 @@ html {
                     display: flex;
                     flex-direction: column;
                     column-gap: 2.4rem;
+                        img{
+                            width: 16rem;
+                            height: 7rem;
+                            margin-bottom: 2rem;
+                            transform: translateY(-2rem);
+                        }
                     ul {
                         display: flex;
                         flex-direction: row;

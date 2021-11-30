@@ -56,6 +56,7 @@
             header {
                 #nav {
                     padding: 0px 3.2rem;
+                    padding-top: 2rem;
                 }
             }
             #section-a {
@@ -105,6 +106,7 @@
                 position: relative;
                 #nav {
                     padding: 0px 6.4rem;
+                    padding-top: 2rem;
                     #logo {
                         z-index: 3;
                     }
@@ -312,6 +314,7 @@
             header {
                 #nav {
                     padding: 0px 3.2rem;
+                    padding-top: 2rem;
                 }
             }
             #section-hero {
@@ -402,7 +405,17 @@
     // 435px
     html {
         body {
-            #section-hero {
+            header{
+                #nav{
+                    #logo{
+                        img{
+                            width: 17rem;
+                            height: 6.5rem;
+                        }
+                    }
+                }
+            }
+                #section-hero {
                 .container {
                     #hero-text-box {
                         .heading-primary {
