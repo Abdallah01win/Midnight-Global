@@ -87,9 +87,12 @@
         font-size: 2rem;
         display: inline-block;
         transition: all 300ms ease-in-out;
-        &:hover,
-        &:active {
+        &:hover{
             background-color: $accent-color;
+        }
+        &:active{
+            transform: scale(.95);
+            background-color: $primary-color;
         }
     }
 }
@@ -97,8 +100,7 @@
 @mixin sec-button {
     background-color: white;
     color: $text-color;
-    &:hover,
-    &:active {
+    &:hover{
         background-color: #fdf2e9;
         color: $text-color;
         box-shadow: inset 0 0 0 3px white;

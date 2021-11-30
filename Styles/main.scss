@@ -59,9 +59,13 @@ html {
                             background-color: $primary-color;
                             color: white;
                             cursor: pointer;
-                            &:hover,
-                            &:active {
+                            transition: all 300ms ease-in-out;
+                            &:hover{                            
                                 background-color: $accent-color;
+                            }
+                            &:active{
+                                transform: scale(.95);
+                                background-color: $primary-color;
                             }
                         }
                     }
@@ -523,10 +527,14 @@ html {
                             margin-top: 1.8rem;
                             cursor: pointer;
                             transition: all 300ms ease-out;
-
                             &:hover {
                                 background: $bg-color;
                                 color: #45260a;
+                            }
+                            &:active{
+                                transform: scale(.95);
+                                background-color: #45260a;
+                                color: $bg-color;
                             }
                         }
                         .checkbox__container {
