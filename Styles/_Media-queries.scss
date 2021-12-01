@@ -1,14 +1,4 @@
-@media (max-width: 87.5em) {
-    html {
-        body {
-            #section-d {
-                #gallery {
-                    @include grid(2);
-                }
-            }
-        }
-    }
-}
+
 @media (max-width: 75em) {
     html {
         font-size: 56.25%;
