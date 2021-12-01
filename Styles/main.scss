@@ -242,6 +242,7 @@ html {
                         }
                         .card-content {
                             padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+                            backface-visibility: hidden;
                             .card-tags {
                                 display: flex;
                                 gap: 0.4rem;

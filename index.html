@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="discription"
         content="The best meals from around the globe made with all the original and organic ingrediants, and by the hands of the top award-winning chefs.">
+        <link rel="icon" href="/Assets/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/main.min.css">
     <title>Midnight Global &mdash; Brigns the world's best cuisine to your table!</title>
@@ -14,14 +15,13 @@
 
 <body>
     <!-- Navigation -->
-
     <header>
         <nav id="nav">
             <ul id="logo">
                 <li class="navElement"><img src="/Assets/MG-Logo.png" alt="Midnight Global Logo"></li>
             </ul>
             <ul id="nav-links" class="hidden-nav">
-                <li class="navElement"><a href="#section-b">About</a></li>
+                <li class="navElement"><a href="#section-b">Services</a></li>
                 <li class="navElement"><a href="#section-c">Menu</a> </li>
                 <li class="navElement"><a href="#section-e">Events</a>
                 </li>
@@ -93,8 +93,8 @@
 
     <section id="section-b">
         <div class="container">
-            <p>About Us</p>
-            <h2>What do we offer our costumors</h2>
+            <p>Services</p>
+            <h2>What we offer our costumors</h2>
             <div class="grid-pattern">
                 <div class="text-box">
                     <p class="step">01</p>
@@ -490,25 +490,9 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <script>
-        const hamNav = document.getElementById('ham');
-        const navLinks = document.getElementById('nav-links');
-        hamNav.addEventListener('click', () => {
-            navLinks.classList.toggle('hidden-nav');
-            hamNav.classList.toggle('close-icon');
-        })
-    </script>
+    <script src="/Scripts/app.js"></script>
 </body>
 
 </html>
