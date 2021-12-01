@@ -314,8 +314,7 @@ html {
             grid-gap: 0px;
             .container {
                 @include section-headings();
-
-                padding: 9.6rem 8rem;
+                padding: 3rem 8rem;
                 #testamonials {
                     @include grid(2);
                     row-gap: 4.8rem;
